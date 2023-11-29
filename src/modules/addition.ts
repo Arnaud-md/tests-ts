@@ -6,5 +6,17 @@ export function sumSmallNumbers(a: number, b: number){
 };
 
 export function sum(numA: number, numB: number){
-    return sumSmallNumbers(numA, numB);
+    if(numA===0) {
+        return numB
+    }
+    else if (numB===0) {
+        return numA
+    }
+    // if(numA>=10 && numB<10) {
+    //     const mySum = sumSmallNumbers(numA%10,numB);
+    //     return sum(Math.floor(numA/10)
+    // }
+    else {
+        return numA+ numB;
+    }
 };
